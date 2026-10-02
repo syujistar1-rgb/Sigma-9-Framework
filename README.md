@@ -260,6 +260,16 @@ Attribution is part of the governance layer, not optional documentation.
 
 ## License and Attribution
 
+# Sigma-9 Framework
+
+## 🔬 Scientific Manuscript & Theory
+The underlying mathematics, quantum-cognitive state mechanics, and philosophical derivations powering this framework are fully documented in the official research paper:
+
+👉 **[Read the Manuscript: Temporal Multidimensionality (PDF)](./Temporal_Multidimensionality_Manuscript.pdf)**
+
+### Core Theoretical Abstract
+Traditional cognitive and structural models treat time as a uniform, linear vector. This framework implements the **Model of Temporal Multidimensionality**, demonstrating that a singular system can navigate multi-faceted parallel tracks of execution speed, driven by dynamic phase rotations ($\theta \to \pi/2$) and entropy minimization ($S_{sys} \to 0$) under localized triggers.
+
 Sigma-9 deployments should preserve the project's primary author attribution and maintain a complete record of architectural, mathematical, and threshold changes.
 
 Any production deployment should additionally pin dependency versions, record model artifacts, persist validation metrics, and retain the exact guardrail configuration used for each run.
