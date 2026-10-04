@@ -269,6 +269,26 @@ The underlying mathematics, quantum-cognitive state mechanics, and philosophical
 
 ### Core Theoretical Abstract
 Traditional cognitive and structural models treat time as a uniform, linear vector. This framework implements the **Model of Temporal Multidimensionality**, demonstrating that a singular system can navigate multi-faceted parallel tracks of execution speed, driven by dynamic phase rotations ($\theta \to \pi/2$) and entropy minimization ($S_{sys} \to 0$) under localized triggers.
+## 📦 System Dependencies
+* **Local Architecture Requirements:** Python 3.x, NumPy, SymPy, XGBoost.
+* **Infrastructure Independence:** Zero External Cloud/Web API Dependencies. The core architecture runs entirely locally and offline to preserve absolute system security.
+
+## 🧮 Mathematical Scoring Architecture
+To guarantee bounded consistency across all cross-layer extraction channels, the tensor scoring system strictly adheres to normalized weighting boundaries:
+
+$$\mathcal{S}_{\Sigma9} = \frac{\sum_{i} w_i \Phi_i}{\sum_{i} w_i}$$
+
+Where constraints enforce:
+* $0 \le \mathcal{S}_{\Sigma9} \le 1.0$ (System is strictly normalized to unity)
+* All component weights $w_i \ge 0$
+
+## 🔄 Mirror-Circuit Fault Verification Loop
+The architecture splits data processing into two separate, asynchronous execution channels (Timeline Alpha and Timeline Beta) to measure temporal convergence. 
+
+To run the adversarial fault-injection validation pipeline on your PC and witness the system detect processing drift under fire, run the verified demo file:
+```bash
+python verification_demo.py
+```
 
 Sigma-9 deployments should preserve the project's primary author attribution and maintain a complete record of architectural, mathematical, and threshold changes.
 
