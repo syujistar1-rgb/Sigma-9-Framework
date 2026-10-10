@@ -285,8 +285,38 @@ Where constraints enforce:
 ## 🔄 Mirror-Circuit Fault Verification Loop
 The architecture splits data processing into two separate, asynchronous execution channels (Timeline Alpha and Timeline Beta) to measure temporal convergence. 
 
-To run the adversarial fault-injection validation pipeline on your PC and witness the system detect processing drift under fire, run the verified demo file:
+
+# Sigma-9 Framework
+
+[![Build Status](https://github.com/syujistar1-rgb/Sigma-9-Framework/actions/workflows/ci.yml/badge.svg)](https://github.com/syujistar1-rgb/Sigma-9-Framework/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/python-3.10%2B-brightgreen)](https://www.python.org/)
+
+The **Sigma-9 Framework** is a high-throughput, multi-domain technology engine designed to unify heterogeneous streaming telemetry (astronomical alerts, quantitative market depth, seismic sensor arrays, and quantum noise streams). 
+
+Sigma-9 resolves the fundamental trade-off in modern real-time processing by executing **Deterministic Symbolic Circuit Breakers** ahead of **Sequential Bayesian Machine Learning Models**, guaranteeing bounded safety and zero-hallucination guardrails at sub-millisecond latencies.
+
+---
+
+## Key Architectural Features
+
+- **Layer 1: Unified Zero-Copy Memory Arena:** Ingests PyArrow `RecordBatch` streams into C-contiguous memory buffers and executes microsecond relational queries via an in-memory DuckDB OLAP engine.
+- **Layer 2: Dynamic AST & Axiomatic Guardrails:** Pre-compiles physical invariants into Abstract Syntax Trees (AST) and enforces quantum axiomatic state-space mapping ($\text{Tr}(\rho) = 1$, $\lambda_{\min}(\rho) \ge 0$, $\text{Tr}(\rho^2) \le 1$) for deterministic validation.
+- **Layer 3: Sequential Bayesian & Quantum Surprisal Core:** Evaluates frame surprise in $nats$ via conjugate state updates and quantum Bures fidelity distance metrics.
+- **Layer 4: Multi-Domain Automated Dispatch:** Generates formatted payloads for the IAU Transient Name Server (TNS) or quantum error correction routing.
+
+---
+
+## Quickstart
+
+### Installation
+
+Clone the repository and install in editable mode:
+
 ```bash
+git clone [https://github.com/syujistar1-rgb/Sigma-9-Framework.git](https://github.com/syujistar1-rgb/Sigma-9-Framework.git)
+cd Sigma-9-Framework
+pip install -e .
 python verification_demo.py
 ```
 
