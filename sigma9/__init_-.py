@@ -10,8 +10,13 @@ from sigma9.quantum import (
     QuantumAxiomaticGuardrail,
     QuantumBayesianStateTracker,
 )
+from sigma9.evolution import (
+    RecursiveMetaSynthesizer,
+    CrossDomainIsomorphismMapper,
+    AutonomousDiscoveryOrchestrator,
+)
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 __all__ = [
     "Sigma9CoreEngine",
     "DynamicASTGuardrail",
@@ -19,4 +24,7 @@ __all__ = [
     "ZeroCopyMemoryArena",
     "QuantumAxiomaticGuardrail",
     "QuantumBayesianStateTracker",
+    "RecursiveMetaSynthesizer",
+    "CrossDomainIsomorphismMapper",
+    "AutonomousDiscoveryOrchestrator",
 ]
