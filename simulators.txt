@@ -1,0 +1,58 @@
+import time
+import random
+import numpy as np
+from dataclasses import dataclass
+from typing import Dict, Any
+
+@dataclass
+class TelemetryFrame:
+    domain: str
+    timestamp: float
+    payload: Dict[str, Any]
+
+class SimulatedDataHarness:
+    """Generates simultaneous multi-domain mock data streams for Sigma-9 Layer 1 ingestion."""
+    def __init__(self):
+        self.domains = ["astro", "quant", "seismic"]
+
+    def generate_fits_frame(self) -> Dict[str, Any]:
+        return {
+            "image_id": f"fits_{random.randint(1000, 9999)}",
+            "flux_variance": random.uniform(0.01, 0.5),
+            "snr": random.uniform(5.0, 45.0)
+        }
+
+    def generate_order_book(self) -> Dict[str, Any]:
+        base_price = 10000.0
+        return {
+            "ticker": "SIGMA-9",
+            "bid": base_price + random.uniform(-2.0, 2.0),
+            "ask": base_price + random.uniform(2.0, 4.0),
+            "depth": random.randint(100, 5000)
+        }
+
+    def generate_seismic_frequency(self) -> Dict[str, Any]:
+        return {
+            "sensor_id": "geo_node_01",
+            "peak_ground_acceleration": random.uniform(0.001, 0.15),
+            "frequency_hz": random.uniform(0.5, 20.0)
+        }
+
+    def stream_round(self) -> TelemetryFrame:
+        domain = random.choice(self.domains)
+        ts = time.time()
+        if domain == "astro":
+            payload = self.generate_fits_frame()
+        elif domain == "quant":
+            payload = self.generate_order_book()
+        else:
+            payload = self.generate_seismic_frequency()
+        return TelemetryFrame(domain=domain, timestamp=ts, payload=payload)
+
+if __name__ == "__main__":
+    harness = SimulatedDataHarness()
+    print("Initializing Sigma-9 Multi-Domain Simulated Data Harness...")
+    for _ in range(5):
+        frame = harness.stream_round()
+        print(f"[{frame.domain.upper()}] Timestamp: {frame.timestamp:.2f} | Payload: {frame.payload}")
+        time.sleep(0.4)
