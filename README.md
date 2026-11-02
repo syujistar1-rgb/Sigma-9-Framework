@@ -277,3 +277,23 @@ Whether monitoring deep-space observations, planetary geodynamics, quantitative 
 The open-source repository serves as the transparent, verifiable interface layer for this vision—proving design validity, low-latency execution, and system integrity while paving the way for next-generation planetary and deep-tech platforms.
 
 ---
+# Kinetix-9: Computational Particle-Field Reactor (CPFR)
+*A Next-Generation Subatomic Power Engine & Digital Twin Simulation Suite*
+
+## Overview
+**Kinetix-9** is a theoretical, geometrically synchronized subatomic power engine engineered to bypass the physical and thermodynamic limitations of conventional 20th-century energy generation. By replacing physical containment walls with a dynamic **Point-Source Electrostatic Field Matrix** and utilizing **Direct Electromagnetic Induction**, the architecture solves five fundamental thermodynamic and safety paradoxes.
+
+## Core Architectural Layers
+1. **Layer A (Electro-Kinetic Shell):** Extracts electrical energy directly via high-velocity electron tracks and magnetic induction, completely bypassing thermal water-boiling and turbine cycles.
+2. **Layer B (Algorithmic Vector Steering):** Replaces random particle collisions with deterministic spatial convergence toward precision focal nodes ($\vec{X}_0$), eliminating collision chaos and energy waste.
+3. **Layer C (Resonant State-Space Field):** Suspends free neutrons within a non-thermal energy matrix ($15.0 \, \text{GHz}$), successfully neutralizing radiation embrittlement and structural shock.
+
+## Digital Twin Simulation Suite
+This repository contains executable Python simulation harnesses (`/core/kinetix-9/`) modeling the real-time telemetry and physical stability constraints of each reactor layer.
+
+* **Simulation Status:** Verified via numerical models (NumPy, SciPy, Matplotlib).
+* **Whitepaper Documentation:** Full LaTeX specification available under `/docs/`.
+
+## Author
+**Suvarna**  
+*Part of the Sigma-9 Multi-Domain Engine Ecosystem*
